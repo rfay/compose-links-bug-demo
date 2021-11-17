@@ -1,0 +1,13 @@
+services:
+  web: 
+    image: busybox
+    command: tail -f /dev/null
+    links:
+    - db:db
+  db:
+    image: busybox
+    command: tail -f /dev/null
+networks:
+  default:
+    name: test
+    external: true
