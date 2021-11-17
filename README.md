@@ -1,4 +1,4 @@
-Bug demo for docker-compose 2.1.1 `links` problem
+Bug demo for docker-compose 2.1.1 `links` problem, https://github.com/docker/compose/issues/8935
 
 1. `docker network create test`
 2. In each directory (`one` and `two`) `docker-compose up` - You'll now have two identical services on the same network.
